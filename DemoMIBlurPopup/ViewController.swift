@@ -17,8 +17,11 @@ class ViewController: UIViewController {
 
     
     @IBAction func showPopUp(_ sender: Any) {
-        
-        MIBlurPopup.show(SecondPopUpViewController(), on: self)
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondController = storyboard.instantiateViewController(withIdentifier: "SecondPopUpViewController") as! SecondPopUpViewController
+
+        MIBlurPopup.show(secondController, on: self)
         
     }
     

@@ -53,7 +53,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="Scb-7w-N6c" kind="custom" customClass="MIBlurPopupSegue" customModule="DemoMIBlurPopup" customModuleProvider="target" id="dxm-bz-nZ1"/>
+                        <segue destination="Scb-7w-N6c" kind="custom" identifier="SecondPopUpViewController" customClass="MIBlurPopupSegue" customModule="DemoMIBlurPopup" customModuleProvider="target" id="dxm-bz-nZ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -112,7 +112,7 @@
         <!--Second Pop Up View Controller-->
         <scene sceneID="mca-Ic-Xwt">
             <objects>
-                <viewController id="Scb-7w-N6c" customClass="SecondPopUpViewController" customModule="DemoMIBlurPopup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondPopUpViewController" id="Scb-7w-N6c" customClass="SecondPopUpViewController" customModule="DemoMIBlurPopup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AuF-zd-OdT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
